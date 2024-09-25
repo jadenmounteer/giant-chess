@@ -24,6 +24,7 @@
     <a-scene renderer="colorManagement: true">
       <a-assets>
         <a-asset-item id="chess" src="assets/chess-board.glb"></a-asset-item>
+        <img id="sky" src="assets/images/background.jpg" />
       </a-assets>
       <a-entity
         light="color: #EEE; intensity: 1.27"
@@ -37,7 +38,7 @@
         scale="0.5 0.5 0.5"
       ></a-entity>
 
-      <a-sky color="#ECECEC" opacity="0"></a-sky>
+      <a-sky src="#sky"></a-sky>
 
       <!-- Add a camera with look-controls and wasd-controls -->
       <a-camera id="camera" position="0 1.6 0"> </a-camera>
